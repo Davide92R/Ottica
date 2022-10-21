@@ -1,0 +1,12 @@
+.img-bg{
+    background-image: url(/public/media/occhiali.jpg);
+    background-size: cover;
+}
+
+/* h1{
+    margin-top: 30px;
+} */
+
+.bordo{
+    border: solid red 2px;
+}
