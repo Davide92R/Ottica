@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\AdminMail;
 use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -41,11 +42,14 @@ class PublicController extends Controller{
         $name= $request->input('name');
         $email= $request->input('email');
         $message= $request->input('message');
-        
+        // *dati per personalizzare la mail di ringraziamento utente
         // dd($name,$email,$message);
         $contact=compact('name', 'email','message');
-        Mail::to($email)->send(new ContactMail($contact));
 
+        // dati da mandare all'admin del sito via mail
+        $adminContact = compact("name", "email", "message");
+        Mail::to($email)->send(new ContactMail($contact));
+        Mail::to("admin@gmail.com")->send(new AdminMail($adminContact));
         return redirect(route('redirectMail'));
 
         // return redirect(route('home'))->with('message', 'Grazie per averci contattati! Le risponderemo presto');
