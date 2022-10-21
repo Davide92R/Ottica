@@ -25,3 +25,7 @@ Route::get('/OCT', [PublicController::class, 'OCT'])->name('OCT');
 Route::get('/chirurgiaEstetica', [PublicController::class, 'chirurgiaEstetica'])->name('chirurgiaEstetica');
 
 Route::get('/contatti',[PublicController::class, 'contatti'])->name('contatti');
+
+Route::post('/submit', [PublicController::class, 'submit'])->name('submit');
+
+Route::get('/redirectMail', [PublicController::class, 'redirectMail'])->name('redirectMail');
