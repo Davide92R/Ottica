@@ -28,12 +28,12 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="/visiteOptometriche">Visite Optometriche</a></li>
                   <li><a class="dropdown-item" href="/Ecografie">Ecografie</a></li>
-                  <li><a class="dropdown-item" href="#">OCT</a></li>
-                  <li><a class="dropdown-item" href="#">Chirurgia Estetica</a></li>
+                  <li><a class="dropdown-item" href="/OCT">OCT</a></li>
+                  <li><a class="dropdown-item" href="/chirurgiaEstetica">Chirurgia Estetica</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Contatti</a>
+                <a class="nav-link active" aria-current="page" href="/contatti">Contatti</a>
               </li>
             </ul>
           </div>

@@ -17,4 +17,16 @@ class PublicController extends Controller{
     public function Ecografie(){
         return view('Ecografie');
     }
+
+    public function OCT(){
+        return view ('OCT');
+    }
+
+    public function chirurgiaEstetica(){
+        return view ('chirurgiaEstetica');
+    }
+
+    public function contatti(){
+        return view ('contatti');
+    }
 }
