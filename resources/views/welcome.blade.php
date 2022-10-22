@@ -13,11 +13,16 @@
     </header>
     <section class="container">
         <div class="row">
+            @foreach ($doctors as $doctor)
             <div class="col-12 col-md-4">
-                <div class="card">
-                    <img src="{{$doctors ['url']}}" alt="">
-                </div>
+                    <div class="card">
+                        <img src="{{$doctor['url']}}" alt="">
+                        <h2>{{$doctor['name']}} {{$doctor['surname']}}</h2>
+                        <p>{{$doctor['description']}}</p>
+                    
+                    </div>
             </div>
+            @endforeach
 
         </div>
     </section>
