@@ -10,7 +10,13 @@ use Illuminate\Support\Facades\Mail;
 class PublicController extends Controller{
 
     public function home() {
-        return view('welcome');
+
+        $doctors=[
+            ['name'=>'Davide', 'surname'=>'Roggero', 'description'=>'', 'url'=>'/media/occhiali.jpg'],
+            ['name'=>'Michele', 'surname'=>'De Girolamo', 'description'=>'', 'url'=>''],
+            ['name'=>'Nicolò', 'surname'=>'Manfredi', 'description'=>'', 'url'=>'']
+        ];
+        return view('welcome', ['doctors'=>$doctors]);
     }
 
     public function visiteOptometriche(){

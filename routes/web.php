@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [PublicController::class, 'home'])->name('home');
+Route::get('/home', [PublicController::class, 'home'])->name('home');
 
 Route::get('/visiteOptometriche', [PublicController::class, 'visiteOptometriche'])->name('visiteOptometriche');
 

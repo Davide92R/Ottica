@@ -12,6 +12,13 @@
         </div>
     </header>
     <section class="container">
-        
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="{{$doctors ['url']}}" alt="">
+                </div>
+            </div>
+
+        </div>
     </section>
 </x-layout>

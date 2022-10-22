@@ -8,7 +8,11 @@
 </head>
 <body>
     <h1>Il cliente {{$adminContact["name"]}} ti ha scritto sulla posta </h1>
-    <h3>dettagli utente</h3>
+    <h3>dettagli utente: </h3>
+    <p>
+        {{$adminContact ["email"]}}
+
+    </p>
     <p>
         {{$adminContact["message"]}}
     </p>

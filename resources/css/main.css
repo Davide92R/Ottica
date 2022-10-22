@@ -10,3 +10,12 @@
 .bordo{
     border: solid red 2px;
 }
+
+.card{
+    width: 250px;
+    height: 350px;
+    border: solid 2px grey;
+    border-radius: 20px;
+    margin-top: 20px;
+
+}
