@@ -12,9 +12,9 @@ class PublicController extends Controller{
     public function home() {
 
         $doctors=[
-            ['name'=>'Davide', 'surname'=>'Roggero', 'description'=>'Esperto di carne', 'url'=>'https://api.lorem.space/image/face?w=150&h=150'],
-            ['name'=>'Michele', 'surname'=>'De Girolamo', 'description'=>'Non ci vede per la cataratta ma è oculista', 'url'=>'https://api.lorem.space/image/face?w=150&h=150&hash=9D9539E7'],
-            ['name'=>'Nicolò', 'surname'=>'Manfredi', 'description'=>'Dottore esperto', 'url'=>'https://api.lorem.space/image/face?w=150&h=150&hash=4F32C4CF']
+            ['name'=>'Davide', 'surname'=>'Roggero', 'description'=>'Esperto di carne', 'url'=>'https://api.lorem.space/image/face?w=250&h=350'],
+            ['name'=>'Michele', 'surname'=>'De Girolamo', 'description'=>'Non ci vede per la cataratta ma è oculista', 'url'=>'https://api.lorem.space/image/face?w=250&h=350&hash=9D9539E7'],
+            ['name'=>'Nicolò', 'surname'=>'Manfredi', 'description'=>'Dottore esperto', 'url'=>'https://api.lorem.space/image/face?w=250&h=350&hash=4F32C4CF']
         ];
         return view('welcome', ['doctors'=>$doctors]);
     }

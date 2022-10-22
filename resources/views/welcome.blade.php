@@ -13,13 +13,15 @@
     </header>
     <section class="container">
         <div class="row">
+            <h2 class="display-4 text-center mt-5">Chi siamo:</h2>
             @foreach ($doctors as $doctor)
             <div class="col-12 col-md-4">
-                    <div class="card">
-                        <img src="{{$doctor['url']}}" alt="">
-                        <h2>{{$doctor['name']}} {{$doctor['surname']}}</h2>
-                        <p>{{$doctor['description']}}</p>
-                    
+                    <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                        <div class="fotoProfilo">
+                            <img class="img-fluid" src="{{$doctor['url']}}" alt="">
+                        </div>
+                        <h2 class="text-center">{{$doctor['name']}} {{$doctor['surname']}}</h2>
+                        <p class="text-center">{{$doctor['description']}}</p>
                     </div>
             </div>
             @endforeach
