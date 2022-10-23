@@ -12,7 +12,7 @@
         <form method="POST" action="{{route('submit')}}">
             @csrf
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <label for="exampleInputEmail1" class="form-label">Email</label>
               <input type="email" class="form-control" name="email">
             </div>
 
@@ -26,7 +26,7 @@
                 <textarea name="message" id="" cols="30" rows="10"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Invia!</button>
         </form>
 
     </section>
